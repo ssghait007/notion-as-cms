@@ -1,6 +1,9 @@
 var axios = require('axios')
 var fs = require('fs')
 
+/* Filter entries with status `Done`, i.e. fetch only team members who are onboarded in company. Other statuses can be for candidates who are in process of being hired or shortlisted
+*/
+
 var data = JSON.stringify({
   sorts: [
     {
@@ -30,6 +33,7 @@ var config = {
   data: data,
 }
 
+/* Make API call to fetch data, write to a json file. This is the file that contains data of team members shown on the website.*/
 axios(config)
   .then(function (response) {
     let team = response.data.results.map((f) => ({
@@ -42,6 +46,7 @@ axios(config)
     team.sort((a, b) => a.rank - b.rank)
 
     fs.writeFileSync('./cms/team.json', JSON.stringify(team, null, 2), 'utf-8')
+    console.log("Team data populated");
   })
   .catch(function (error) {
     console.log(error)
