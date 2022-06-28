@@ -1,0 +1,15 @@
+
+
+name: Running Tests
+
+on: [push]
+
+jobs:
+ 
+  SECRET:
+    runs-on: ubuntu-latest
+    name: Secret-Scanner
+    steps:
+      - uses: actions/checkout@v1
+      - name: Secret Detection
+        uses: gitleaks/gitleaks-action@v2.0.4
