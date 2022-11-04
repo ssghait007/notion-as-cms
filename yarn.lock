@@ -8604,10 +8604,10 @@ vue-server-renderer@^2.6.12:
     serialize-javascript "^3.1.0"
     source-map "0.5.6"
 
-vue-server-renderer@^2.7.9:
-  version "2.7.10"
-  resolved "https://registry.yarnpkg.com/vue-server-renderer/-/vue-server-renderer-2.7.10.tgz#e73241c879fcc81de91882ceff135a40f756377c"
-  integrity sha512-hvlnyTZmDmnI7IpQE5YwIwexPi6yJq8eeNTUgLycPX3uhuEobygAQklHoeVREvwNKcET/MnVOtjF4c7t7mw6CQ==
+vue-server-renderer@^2.7.13:
+  version "2.7.13"
+  resolved "https://registry.yarnpkg.com/vue-server-renderer/-/vue-server-renderer-2.7.13.tgz#be153aa4486009a273901ac421d1c3bdfe8e996a"
+  integrity sha512-GvNnUSHE04+B7EhOrk4QWbLKFMdmj2wLEEJEvtVQ/s04nKIHtxSvG4l9/i+p8q7iN3osEhfh0b/cAmXHifgSaA==
   dependencies:
     chalk "^4.1.2"
     hash-sum "^2.0.0"
